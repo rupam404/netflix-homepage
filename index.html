@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0%;
+    }
+    #parent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      width: auto;
+      height: auto;
+      margin-left: 0%;
+    }
+    #child1 {
+      width: 100%;
+      height: 600px;
+      background-color: black;
+      border: 1px solid black;
+    }
+    #child2 {
+      width: 100%;
+      height: 600px;
+      background-color: black;
+      display: flex;
+    }
+    #child3 {
+      width: 100%;
+      height: 600px;
+      background-color: black;
+      display: flex;
+    }
+    #footer{
+      width: 100%;
+      height: 300px;
+      background-color: black;
+    }
+    #navbar {
+      height: 100px;
+      width: 100%;
+      background-color: black;
+      display: flex;
+     
+    }
+    h1 {
+      text-align: center;
+      opacity: none;
+    }
+    #inputsearch {
+      text-align: center;
+    }
+    #searchbar {
+      height: 600px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-image: url("Assets/s3-news-tmp-10557-netflixa--default--1280.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;    
+    }
+    #inputsearch{
+      height: 200px;
+    }
+    h1{
+     color: aliceblue;
+     
+    }
+    #button1{
+      width: 90px;
+      padding: 10px;
+      background-color: red;
+      color: white;
+      font-weight: bold;
+      margin-right: 20px;
+    }
+    #button1:hover{
+      background-color: white;
+      color: red;
+    }
+    #button2{
+      background-color: black;
+      color: white;
+      padding:10px;
+      width: 120px;
+    }
+    input{
+      padding: 10px;
+    }
+    #button2:hover{
+      background-color: white;
+      color: red;
+      border: none;
+      font-weight: bold;
+    }
+ 
+    .section-1{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .section-para{
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      text-align: center;
+    }
+  .footer-text{
+    color: azure;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  #footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #logo-div{
+    width: 50%;
+  }
+  #login-but{
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  #select{
+    padding: 7px;
+    margin-right: 5px;
+   
+  }
+    @media only screen and (max-width: 600px) {
+      #child2{
+      width: 100%;
+      height: 400px;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      }
+      #logo{
+        height: 95px;
+        width: 100px;
+      }
+      #tv-backimg{
+        height: 150px;
+        width: 100%;
+      }
+      #mob-backimg{
+        height: 200px;
+        width: 100%;
+      }
+      #child3{
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      }
+      #button1{
+        margin-right: 2px;
+      }
+      #select{
+        width: 60px;
+        padding: 7px;
+        margin-right: 2px;
+        
+      }
+    }
+   
+  </style>
+  <body>
+    <div id="parent">
+      <div id="child1">
+        <div id="navbar">
+          <div id="logo-div"><img  id="logo" src="Assets/Netflix-logo-red-black-png.png" alt ="img" height="100px" width="150px"></div>
+          <div id="login-but"><button id="button1">Log In</button>
+            <select id="select">
+              <option disabled>Choose Language</option>
+              <option>English</option>
+              <option>Hindi</option>
+            </select>
+          </div>
+        </div>
+        <div id="searchbar">
+          <h1 >Unlimited Movies TV Shows And More</br>Watch Any where Cancel Any Time</h1>
+          <div id="inputsearch">
+            <input type="text" placeholder="Email Address"/><button id="button2">Get Satarted </button>
+          </div>
+        </div>
+      </div>
+    <div id="child2">
+        <div ><img src="Assets/background tv image.jpg" id="tv-backimg" height="600px" width="100%" ></div>
+        <div class="section-1"><h1>Enjoy on your TV</h1>
+        <p class="section-para">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p></div>
+    </div>
+      <div id="child3"> 
+       
+        <div class="section-1"><h1>Watch everywhere.</h1>
+        <p class="section-para">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p></div>
+        <div ><img src="Assets/tula-netflix-logo-tablet-phone-display-162926014.jpg" id="mob-backimg" height="600px" width="100%" ></div>
+    </div>
+  
+
+  <div id="footer">
+    <div id="footer-div">
+      <p class="footer-text">Questions? Call 000-800-040-1843</p>
+      <p class="footer-text">Help Centre</p>
+      <p class="footer-text">Account</p>
+      <p class="footer-text">Terms of Use</p>
+      <p class="footer-text">Contact Us</p>
+    </div>
+  </div>
+</div>
+ 
+    
+  </body>
+</html>
